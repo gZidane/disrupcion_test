@@ -7,6 +7,7 @@ import MovementItem from './components/movementitem';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const movementsContext = React.createContext();
+export const headerContext = React.createContext();
 
 function App() {
 
@@ -28,6 +29,23 @@ function App() {
     console.log(currentMonth);
 
     fetch("http://localhost:3004/movements?date_like=/" + currentMonth + "/")
+      .then(response =>
+      {
+        return response.json()
+        .then(data =>
+          {
+
+            setMovements(data);
+            getBalance(data);
+          })
+      })
+      
+  }
+
+  const getMovementsByMonth = (month) =>
+  {
+
+    fetch("http://localhost:3004/movements?date_like=/" + month + "/")
       .then(response =>
       {
         return response.json()
@@ -72,11 +90,18 @@ function App() {
     console.log(movements);
   }, [])
 
+  const onGetMovementsByMonth = (month) =>
+  {
+    getMovementsByMonth(month);
+  };
+
   return (
     
       <div className="App">
         <div className='container'>
-          <Header></Header>
+          <headerContext.Provider value={{ onGetMovementsByMonth: onGetMovementsByMonth }}>
+            <Header></Header>
+          </headerContext.Provider>
 
           <Card>
             <div className='row'>
