@@ -1,3 +1,16 @@
+@keyframes fadeUp {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: none;
+    }
+    
+}
 .movementContainer
 {
     width: 95%;
@@ -7,6 +20,7 @@
     border-radius: 5px;
     margin-bottom: 15px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    animation: fadeUp 0.7s ease-in-out;
 }
 
 .movementTitle p
