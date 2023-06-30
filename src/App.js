@@ -98,7 +98,7 @@ function App() {
   return (
     
       <div className="App">
-        <div className='container'>
+        <div className='main_container'>
           <headerContext.Provider value={{ onGetMovementsByMonth: onGetMovementsByMonth }}>
             <Header></Header>
           </headerContext.Provider>

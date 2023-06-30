@@ -1,16 +1,19 @@
 .App {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.container
+.main_container
 {
   position: absolute;
   width: 100%;
   min-height: 500px;
-  height: 100%;
+  height: max-content;
   background-color: #f4f9ff;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  padding-bottom: 80px;
 }
 .monthBalance b
 {
@@ -41,6 +44,21 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
+
+@media (min-width: 578px)
+{
+  .main_container
+  {
+    width: 500px !important;
+    margin: 0 auto !important;
+  }
+  .addMovementBtn
+  {
+    width: 300px;
+    left: calc(50% - 150px)
+  }
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
