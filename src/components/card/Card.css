@@ -1,0 +1,36 @@
+.cardContainer
+{
+    width: 95%;
+    height: auto;
+    padding: 15px 15px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.ingresosSection
+{
+    color: #75d58e;
+}
+.ingresosSection p
+{
+    font-size: 12px;
+}
+.ingresosSection span
+{
+    font-size: 18px;
+}
+
+.gastosSection
+{
+    color: #ff898d;
+}
+.gastosSection p
+{
+    font-size: 12px;
+}
+.gastosSection span
+{
+    font-size: 18px;
+}

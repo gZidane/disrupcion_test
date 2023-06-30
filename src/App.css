@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.container
+{
+  position: absolute;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  background-color: #f4f9ff;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.monthBalance b
+{
+  color: #6582f8;
+  font-size: 36px;
+}
+.movementsOuter
+{
+  width: 100%;
+  margin-top: 25px;
+}
+.text-left
+{
+  text-align: left;
+  padding-left: 5%;
+}
+.addMovementBtn
+{
+  position: fixed;
+  width: 60%;
+  height: 50px;
+  bottom: 20px;
+  left: 20%;
+  border: none;
+  border-radius: 5px;
+  background-color: #6582f8;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

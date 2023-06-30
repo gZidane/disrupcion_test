@@ -1,0 +1,48 @@
+.movementContainer
+{
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.movementTitle p
+{
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+.circleType
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.circleType.circleGasto
+{
+    background-color: #ff898d;
+}
+.circleType.circleIngreso
+{
+    background-color: #75d58e;
+    font-weight: bold;
+}
+.movementAmount span.amountGasto
+{
+    color: #ff898d;
+    font-weight: bold;
+}
+.movementAmount span.amountIngreso
+{
+    color: #75d58e;
+}
+
+.arrowBtn
+{
+    background-color: transparent;
+    border: none;
+}
